@@ -1,0 +1,14 @@
+﻿.items{
+
+}
+
+.container {
+	max-width: 1350px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+}
