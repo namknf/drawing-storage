@@ -2,24 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css"  />
+    <link
+      rel="shortcut icon"
+      href="~\Pictures\favicon.png"
+      type="image/x-icon"
+    />
     <title>Drawing Storage</title>
 </head>
 <body>
+    <div class="wrapper">
     <header class="header___inner">
         <nav class="items">
             <div class="container">
-                <a asp-page="\Index">Home</a>
+                <a asp-page="\Index">HOME</a>
             </div>
             <div class="register">
-                <form action="Register.cshtml" target="_blank">
+                <form asp-page="\Register">
                     <button>Join our team</button>
                 </form>
             </div>
         </nav>
     </header>
+    <div class="photos">
+        <div class="photo__">
+        <img 
+        src="~/Pictures/photo1.jpg" 
+        alt="pretty girl number 1" 
+        height="450px"
+        weight="450px"/>
+        <p>
+            SONYA IVLEVA
+        </p>
+        <p>
+            Saransk
+        </p>
+        </div>
+        <div class="photo__">
+        <img 
+        src="~/Pictures/photo2.jpg" 
+        alt="pretty girl number 2"
+        height="450px"
+        weight="450px"/>
+        <p>LISA DANILINA</p>
+        <p>         
+            Nizhny Novgorod
+        </p>
+        </div>
+    </div>
+    </div>
 
+    @RenderBody()
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
