@@ -1,0 +1,60 @@
+﻿:root {
+	--color-black: #000000;
+	--color-light: #EFEFEF;
+	--color-button: #302F2F;
+	--color-bg: #E5E5E5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	color: var(--color-black);
+	font-family: "IBM Plex Mono", sans-serif;
+}
+
+.container {
+
+}
+
+.items {
+	padding: 120px 60px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30px;
+	max-width: 1350px;
+	width: 100%;
+	margin: 0 auto;
+	font-weight: 400;
+}
+
+body {
+	background-color: var(--color-bg);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	color: var(--color-light);
+	padding: 8px 93.5px;
+	background: var(--color-button);
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	line-height: 34px;
+	font-size: 30px;
+}
+
+.photos {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 350px;
+}
