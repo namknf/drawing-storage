@@ -1,15 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Pages\style.css" />
+    <None Include="wwwroot\Pictures\photo1.jpg" />
+    <None Include="wwwroot\Pictures\photo2.jpg" />
+    <None Include="wwwroot\style.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pages\style.css" />
+    <Folder Include="wwwroot\Pictures\" />
   </ItemGroup>
 
 </Project>
