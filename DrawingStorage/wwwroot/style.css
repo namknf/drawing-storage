@@ -60,10 +60,17 @@ button:hover {
 	background-color: var(--color-active);
 	box-shadow: 12px 12px 2px 1px var(--color-box);
 	border: 2px solid var(--color-box);
+	transition: all 0.5s ease;
 }
 
 .photos {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 350px;
+}
+
+.photo__:hover {
+	box-shadow: 12px 12px 2px 1px var(--color-box);
+	border: 2px solid var(--color-box);
+	transition: all 0.5s ease;
 }
