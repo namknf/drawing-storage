@@ -17,7 +17,7 @@ html {
 
 .wrapper {
 	color: var(--color-black);
-	font-family: "IBM Plex Mono", sans-serif;
+	font-family: "IBM Plex Mono", monospace;
 }
 
 .container {
@@ -28,7 +28,7 @@ html {
 	padding: 120px 60px;
 	display: flex;
 	justify-content: space-between;
-	font-size: 30px;
+	font-size: 28px;
 	max-width: 1350px;
 	width: 100%;
 	margin: 0 auto;
@@ -58,7 +58,7 @@ button {
 button:hover {
 	color: var(--color-box);
 	background-color: var(--color-active);
-	box-shadow: 12px 12px 2px 1px var(--color-box);
+	box-shadow: 6px 6px 2px 1px var(--color-box);
 	border: 2px solid var(--color-box);
 	transition: all 0.5s ease;
 }
@@ -66,11 +66,19 @@ button:hover {
 .photos {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 350px;
+	margin: 0 250px;
+}
+
+img:hover {
+	box-shadow: 12px 12px 2px 1px var(--color-active);
+	transition: all 0.5s ease;
 }
 
 .photo__:hover {
-	box-shadow: 12px 12px 2px 1px var(--color-box);
-	border: 2px solid var(--color-box);
-	transition: all 0.5s ease;
+	color: var(--color-box);
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #333;
 }
